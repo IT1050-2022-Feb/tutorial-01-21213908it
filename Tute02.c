@@ -16,9 +16,25 @@ Amount = 20 x 50 = 1000
 Distance -> 50
 Amount = 30 x 50 + (50-30) x 40 = 2300*/
 
-#include <stdio.h>
+#include <stdio.h>//standard input output header
 
 int main() {
   
-  return 0;
+  float amount,distance;//declaration variable
+
+  printf("Enter the ditance van has travalled : ");//prompt enter distance
+  scanf("%f", &distance);//read distance
+
+  if(distance < 30)
+  {
+    amount = distance * 50;//calculate amount
+  } 
+  else
+  {
+    amount = distance * 50 + (50 - 30) * 40;//calculate amount
+  }
+  printf("Full amount of travel : %.2f", amount);//print full amount
+
+  
+  return 0;//End of main function
 }
